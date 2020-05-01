@@ -31,6 +31,17 @@ public class UserInfo {
 	@Column(name="Phone")
 	private String phone;
 	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Column(name="Age")
+	private int age;
+	
 	
 	
 	public int getUserID() {

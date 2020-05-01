@@ -9,8 +9,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.bhoomi.userServices.entity.UserInfo;
-
 @SpringBootTest
 public class UserInfoTest {
 	
@@ -24,9 +22,7 @@ public class UserInfoTest {
 		ui.setPhone("xxx-xxx-xxxx");
 		ui.setDateCreated(date);
 		ui.seteMail("chaitanyareddy69@gmail.com");
-		ui.setFacilityName("test");
 		ui.setLastUpdated(date);
-		ui.setPin("xxxxxx");
 		ui.setUserID(12345);
 		
 		Assertions.assertEquals("chaitanya", ui.getFirstName());
@@ -34,9 +30,7 @@ public class UserInfoTest {
 		Assertions.assertEquals("xxx-xxx-xxxx", ui.getPhone());
 		Assertions.assertEquals(df.format(date), df.format(ui.getDateCreated()));
 		Assertions.assertEquals("chaitanyareddy69@gmail.com", ui.geteMail());
-		Assertions.assertEquals("test", ui.getFacilityName());
 		Assertions.assertEquals(df.format(date), df.format(ui.getLastUpdated().getTime()));
-		Assertions.assertEquals("xxxxxx", ui.getPin());
 		Assertions.assertEquals(12345, ui.getUserID());
 	}
 

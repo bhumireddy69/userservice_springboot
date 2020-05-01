@@ -60,9 +60,7 @@ public class UserControllerTest {
 		ui.setPhone("xxx-xxx-xxxx");
 		ui.setDateCreated(new Date());
 		ui.seteMail("chaitanyareddy69@gmail.com");
-		ui.setFacilityName("test");
 		ui.setLastUpdated(new Date());
-		ui.setPin("xxxxxx");
 		ui.setUserID(12345);
 		return ui;
 	}
